@@ -11,7 +11,7 @@ public class B01 {
 
     public static void main(String[] args) throws InterruptedException {
 
-        System.setProperty("webdriver.chrome.driver", "src/resource/drivers/chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", "src/Resources/Drivers/chromedriver.exe");
         WebDriver driver = new ChromeDriver();
         driver.manage().window().maximize();
         System.out.println(driver.getTitle());
@@ -19,14 +19,14 @@ public class B01 {
         //Amazon sayfasına gidiniz
         driver.get("https://www.amazon.com");
 
-        //iphone aratınız
+        //samsung aratınız
         WebElement aramaMotoru = driver.findElement(By.id("twotabsearchtextbox"));
         aramaMotoru.sendKeys("samsung");
         aramaMotoru.submit();
 
         //çıkan sonuç yazısını konsola yazdırınız
         List<WebElement> sonucYazisi = driver.findElements(By.className("sg-col-inner"));
-        System.out.println(sonucYazisi.get(0).getText());//1-16 of 283 results for "samsung"
+        System.out.println(sonucYazisi.get(0).getText());
 
 
         //çıkan ürünlerden ilk 5 tanesine tıklayıp sayfa başlıklarını yazdırınız
