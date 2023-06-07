@@ -27,39 +27,52 @@ public class C00 {
 
     static WebDriver driver;
     @BeforeClass
-    public static void before() throws Exception {
+    public static void beforeClass() throws Exception {
         WebDriverManager.chromedriver().setup();
-
-    }
-
-    @Before
-    public void setUp() throws Exception {
         driver = new ChromeDriver();
         driver.manage().window().maximize();
         driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(15));
-        driver.get("https://www.google.com");
     }
 
+
+    @Before
+    public void setUp() throws Exception {
+        driver.get("http://www.google.com");
+        Thread.sleep(1500);
+    }
+
+
     @Test
-    public void aramaMotoru1() {
-        driver.findElement(By.xpath("//*[@id='APjFqb']")).sendKeys("The God Father", Keys.ENTER);
+    public void test1() throws InterruptedException {
+        WebElement aramakutusu=  driver.findElement(By.xpath("//*[@class='gLFyf']"));
+        aramakutusu.sendKeys("The God Father");
+        aramakutusu.submit();
+
         WebElement sonucYazisi1 = driver.findElement(By.xpath("//*[@id='result-stats']"));
-        System.out.println(sonucYazisi1.getText());
-
+        String []sonucSayisi1 = sonucYazisi1.getText().split(" ");
+        System.out.println("Sonuc Sayisi1 : "+ sonucSayisi1[1]);
+        Thread.sleep(1500);
     }
-    @Test
-    public void aramaMotoru2() {
-        driver.findElement(By.xpath("//*[@id='APjFqb']")).sendKeys("Lord of the Rings", Keys.ENTER);
-        WebElement sonucYazisi2 = driver.findElement(By.xpath("//*[@id='result-stats']"));
-        System.out.println(sonucYazisi2.getText());
 
-    }
+
+
     @Test
-    public void aramaMotoru3() {
-        driver.findElement(By.xpath("//*[@id='APjFqb']")).sendKeys("Kill Bill", Keys.ENTER);
+    public void test2() throws InterruptedException {
+        driver.findElement(By.xpath("//*[@class='gLFyf']")).sendKeys("Kill Bill",Keys.ENTER);
+
         WebElement sonucYazisi3 = driver.findElement(By.xpath("//*[@id='result-stats']"));
-        System.out.println(sonucYazisi3.getText());
+        String []sonucSayisi3 = sonucYazisi3.getText().split(" ");
+        System.out.println("Sonuc Sayisi3 : "+ sonucSayisi3[1]);
+        Thread.sleep(1500);
+    }
+    @Test
+    public void test3() throws InterruptedException {
+        driver.findElement(By.xpath("//*[@class='gLFyf']")).sendKeys("Lord of the Rings",Keys.ENTER);
 
+        WebElement sonucYazisi2 = driver.findElement(By.xpath("//div[@id='result-stats']"));
+        String []sonucSayisi2 = sonucYazisi2.getText().split(" ");
+        System.out.println("Sonuc Sayisi2 : "+ sonucSayisi2[1]);
+        Thread.sleep(1500);
     }
 
     @After
@@ -76,6 +89,7 @@ public class C00 {
 
     @AfterClass
     public static void afterClass() throws Exception {
-        driver.quit();
+
+        driver.close();
     }
 }
