@@ -1,4 +1,4 @@
-package day01_practice;
+package day01_SeleniumPractice;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;

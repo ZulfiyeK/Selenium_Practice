@@ -1,4 +1,4 @@
-package day01_practice;
+package day02_MavenPractice;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -42,7 +42,7 @@ public class C03 {
         electronics.click();
 
 
-       // WebElement width= driver.findElement(By.xpath("(//*[@width='225'])[1]"));
+        // WebElement width= driver.findElement(By.xpath("(//*[@width='225'])[1]"));
         List<WebElement> resimler = driver.findElements(By.xpath("(//*[@class='b-img'])[position()>=1 and position()<=10]"));
         for (int i = 0; i <resimler.size() ; i++) {
             resimler = driver.findElements(By.xpath("(//*[@class='b-img'])[position()>=1 and position()<=10]"));
@@ -64,10 +64,10 @@ public class C03 {
         }*/
     }
 
-        @After
-        public void tearDown() throws Exception {
+    @After
+    public void tearDown() throws Exception {
         driver.close();
-        }
+    }
 
 
 }
