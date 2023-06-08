@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C00 {
+public class B01 {
      /*
     Junit ile testlerimizi yapabilmek icin assertion'lari kullanabilir hale geldik..if lerden kurtulduk
     mainden kurtulduk.
