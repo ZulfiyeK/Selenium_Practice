@@ -1,10 +1,7 @@
 package day04_Options;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.junit.Assert;
-import org.junit.Before;
-import org.junit.BeforeClass;
-import org.junit.Test;
+import org.junit.*;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -60,8 +57,8 @@ public class C01_CheckBox {
     }
 
 
-
-
-
-
+    @After
+    public void tearDown() throws Exception {
+        driver.close();
+    }
 }
