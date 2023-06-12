@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class C03_KaynakKodlari {
+public class C03_PageSource {
     static WebDriver driver;
 
     @Before
