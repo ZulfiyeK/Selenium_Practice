@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
-public class Methotlar {
+public abstract class Methotlar {
     protected WebDriver driver;
     @Before
     public void setUp() throws Exception {
@@ -23,11 +23,11 @@ public class Methotlar {
 
     @After
     public void tearDown() throws Exception {
-        driver.quit();
+       // driver.quit();
     }
 
 
-    public void bekle(int saniye) {
+    public void wait(int saniye) {
         try {
             Thread.sleep(saniye*1000);
         } catch (InterruptedException e) {
