@@ -5,9 +5,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import util.Methotlar;
 
-public class B00 extends Methotlar {
-
-
+public class B00_Alert extends Methotlar {
 
     @Test
     public void test1() {
@@ -22,9 +20,8 @@ public class B00 extends Methotlar {
         // alert cikarsa tamam'a basalım.
         alertAccept();
 
-
-
     }
+
 
     @Test
     public void test2() {
@@ -44,6 +41,7 @@ public class B00 extends Methotlar {
         System.out.println(sonuc.getText());
     }
 
+
     @Test
     public void test3() {
         //https://demoqa.com/alerts
@@ -58,9 +56,6 @@ public class B00 extends Methotlar {
          alertPrompt("Zulfiye");
          wait(2);
          alertAccept();
-
-
-
 
     }
 }
