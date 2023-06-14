@@ -30,7 +30,9 @@ public class C03_Iframe extends Methots {
         WebElement iframe = driver.findElement(By.xpath("(//iframe)[1]"));
         driver.switchTo().frame(iframe);
         WebElement play = driver.findElement(By.xpath("//*[@class ='ytp-large-play-button ytp-button ytp-large-play-button-red-bg']"));
+        wait(2);
         play.click();
+
 
         /*
          Play'i dogru locate edip click yapmamıza ragmen videoyu calıstırmadı bunun üzerine HTML kodlarını inceleyince
@@ -45,7 +47,7 @@ public class C03_Iframe extends Methots {
 
 
       // 'Powerful,but easy to misuse' yazısının gorunur oldugunu test ediniz
-        driver.switchTo().parentFrame();
+        driver.switchTo().parentFrame();//iframe'den disari cikiyoruz.
 
         WebElement powerYazisi = driver.findElement(By.xpath("//*[@id='Powerful_but_easy_to_misuse']"));
         Assert.assertTrue(powerYazisi.isDisplayed());
