@@ -1,4 +1,4 @@
-package day02_MavenPractice;
+package tekrar;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -11,7 +11,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class B04_devamediyor {
+public class B05_devamediyor {
 
     static WebDriver driver;
 

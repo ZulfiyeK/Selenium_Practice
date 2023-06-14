@@ -1,4 +1,4 @@
-package day01_SeleniumPractice;
+package tekrar;
 
 
 import org.openqa.selenium.By;

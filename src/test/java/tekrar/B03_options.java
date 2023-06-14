@@ -1,4 +1,4 @@
-package day02_MavenPractice;
+package tekrar;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 import java.time.Duration;
 import java.util.List;
 
-public class B02 {
+public class B03_options {
     /*
 
     Bir class oluşturun: DropDown

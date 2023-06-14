@@ -1,11 +1,11 @@
-package day05;
+package tekrar;
 
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WindowType;
 import util.Methots;
 
-public class B001_Iframe extends Methots {
+public class B07_WindowHandle extends Methots {
     @Test
     public void test() {
 

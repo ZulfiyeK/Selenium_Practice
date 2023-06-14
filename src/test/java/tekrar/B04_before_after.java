@@ -1,4 +1,4 @@
-package day02_MavenPractice;
+package tekrar;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
@@ -14,7 +14,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
-public class B03 {
+public class B04_before_after {
     WebDriver driver;
 
     @Before

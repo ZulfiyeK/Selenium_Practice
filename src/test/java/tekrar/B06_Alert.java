@@ -1,11 +1,11 @@
-package day05;
+package tekrar;
 
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import util.Methots;
 
-public class B00_Alert extends Methots {
+public class B06_Alert extends Methots {
 
     @Test
     public void test1() {

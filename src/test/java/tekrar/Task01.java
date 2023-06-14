@@ -1,4 +1,4 @@
-package day02_MavenPractice;
+package tekrar;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.junit.After;
