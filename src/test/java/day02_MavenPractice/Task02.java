@@ -10,7 +10,7 @@ import org.openqa.selenium.chrome.ChromeDriver;
 
 import java.time.Duration;
 
-public class B01 {
+public class Task02 {
      /*
     Junit ile testlerimizi yapabilmek icin assertion'lari kullanabilir hale geldik..if lerden kurtulduk
     mainden kurtulduk.
@@ -85,6 +85,8 @@ public class B01 {
 
         String KillBill = driver.getTitle();
         System.out.println("KillBill Title = " + KillBill);
+
+       // System.out.println(driver.getTitle()); sadece bu haliyle de tum title'lari yazdirabiliriz.'
     }
 
     @AfterClass

@@ -3,9 +3,9 @@ package day05;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
-import util.Methotlar;
+import util.Methots;
 
-public class B00_Alert extends Methotlar {
+public class B00_Alert extends Methots {
 
     @Test
     public void test1() {

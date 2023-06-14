@@ -11,9 +11,8 @@ import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
-import java.util.List;
 
-public class B00 {
+public class Task03 {
     static WebDriver driver;
     @Before
     public void setUp() throws Exception {

@@ -10,7 +10,7 @@ import org.openqa.selenium.support.ui.Select;
 
 import java.time.Duration;
 
-public abstract class Methotlar {
+public abstract class Methots {
     protected WebDriver driver;
     @Before
     public void setUp() throws Exception {

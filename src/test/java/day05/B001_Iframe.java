@@ -1,12 +1,11 @@
 package day05;
 
-import com.fasterxml.jackson.annotation.JsonTypeInfo;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.WindowType;
-import util.Methotlar;
+import util.Methots;
 
-public class B001_Iframe extends Methotlar {
+public class B001_Iframe extends Methots {
     @Test
     public void test() {
 
