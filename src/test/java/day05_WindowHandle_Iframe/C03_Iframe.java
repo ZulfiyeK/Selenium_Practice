@@ -1,4 +1,4 @@
-package day05;
+package day05_WindowHandle_Iframe;
 
 import org.junit.Assert;
 import org.junit.Test;
@@ -7,8 +7,6 @@ import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import util.Methots;
-
-import javax.swing.*;
 
 public class C03_Iframe extends Methots {
     @Test
