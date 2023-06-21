@@ -9,7 +9,7 @@ import util.Methots;
 
 import java.util.Set;
 
-public class C01_WindowHandles_devamediyor extends Methots {
+public class C01_WindowHandles extends Methots {
     @Test
     public void test01() throws InterruptedException {
 
@@ -60,13 +60,14 @@ public class C01_WindowHandles_devamediyor extends Methots {
 
         // ikinci sayfa Title'ının 'Türkiye' icerdigini test edin
         String  ikinciSayfaTitle = driver.getTitle();
+        System.out.println("ikinciSayfaTitle = " + ikinciSayfaTitle);
         Assert.assertTrue(ikinciSayfaTitle.contains("Türkiye"));
 
 
 
         Thread.sleep(2000);
 
-        
+
         // ilk sayfaya donun ve Title'ını yazdırın
         driver.switchTo().window(sayfa1Handle);
 
