@@ -5,11 +5,11 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import util.Methots;
+import util.Methods;
 
 
 
-public class C02_ActionsDragAndDrop extends Methots {
+public class C02_ActionsDragAndDrop extends Methods {
     @Test
     public void test1() {
 

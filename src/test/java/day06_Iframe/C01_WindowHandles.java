@@ -5,11 +5,11 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import util.Methots;
+import util.Methods;
 
 import java.util.Set;
 
-public class C01_WindowHandles extends Methots {
+public class C01_WindowHandles extends Methods {
     @Test
     public void test01() throws InterruptedException {
 

@@ -6,9 +6,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
-import util.Methots;
+import util.Methods;
 
-public class C03_Iframe extends Methots {
+public class C03_Iframe extends Methods {
     @Test
     public void test() {
 

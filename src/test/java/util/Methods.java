@@ -12,7 +12,7 @@ import java.time.Duration;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class Methots {
+public abstract class Methods {
     protected WebDriver driver;
     @Before
     public void setUp() throws Exception {

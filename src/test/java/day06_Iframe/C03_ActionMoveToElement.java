@@ -1,17 +1,16 @@
 package day06_Iframe;
 
-import com.beust.ah.A;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.Select;
-import util.Methots;
+import util.Methods;
 
 import java.util.Set;
 
-public class C03_ActionMoveToElement extends Methots {
+public class C03_ActionMoveToElement extends Methods {
     @Test
     public void test() {
     // https://amazon.com adresine gidiniz

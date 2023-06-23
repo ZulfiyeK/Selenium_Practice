@@ -3,12 +3,10 @@ package day06_Iframe;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.By;
-import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
-import util.Methots;
+import util.Methods;
 
-public class C01_Iframe extends Methots {
+public class C01_Iframe extends Methods {
 
     @Test
     public void iframe() {

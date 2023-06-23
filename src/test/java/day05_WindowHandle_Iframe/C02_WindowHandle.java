@@ -3,9 +3,9 @@ package day05_WindowHandle_Iframe;
 import org.junit.Assert;
 import org.junit.Test;
 import org.openqa.selenium.*;
-import util.Methots;
+import util.Methods;
 
-public class C02_WindowHandle extends Methots {
+public class C02_WindowHandle extends Methods {
 
     @Test
     public void test() {
