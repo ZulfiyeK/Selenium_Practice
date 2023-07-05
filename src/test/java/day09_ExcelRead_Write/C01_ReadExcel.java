@@ -26,7 +26,7 @@ public class C01_ReadExcel extends Methods {
 
     }
 
-    public String banaDataGetir(int satirNoIndeks, int sutunNoIndeks) throws IOException {
+    public static String banaDataGetir(int satirNoIndeks, int sutunNoIndeks) throws IOException {
 
         String dosyaYolu = "src/Resources/ulkeler.xlsx";
         FileInputStream fis = new FileInputStream(dosyaYolu);
