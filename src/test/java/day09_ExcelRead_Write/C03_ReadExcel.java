@@ -14,10 +14,7 @@ public class C03_ReadExcel extends Methods {
     @Test
     public void readExcel() throws IOException {
 
-
         //Ulkeler dosyasindaki tum datalari map'a aliniz ve yazdiriniz.
-
-
 
         Map<String,String> ulkeler = new HashMap<>();
 
@@ -35,7 +32,6 @@ public class C03_ReadExcel extends Methods {
             ulkeler.put(key,value);
             //System.out.println(key+"/"+value);
         }
-
         System.out.print("ulkeler = " + ulkeler);
 
 
@@ -52,7 +48,6 @@ public class C03_ReadExcel extends Methods {
             ulkeler.put(key,value);
            //System.out.println(key+"/"+value);
         }
-
         System.out.print("ulkeler = " + ulkeler);
 
 

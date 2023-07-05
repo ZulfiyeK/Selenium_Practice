@@ -38,7 +38,8 @@ public class C02_ReadExcel extends Methods {
 
         //2.yol
         for (int i = 0; i <=sonSatirNo; i++) {
-            String ingilizceBaskentSatiri =  workbook.getSheet("Sayfa1").getRow(i).getCell(1).toString();//baskent ingilizce stununu yazdiracagim, i satiri, 1 de sutunu ifade eder.
+            String ingilizceBaskentSatiri =  workbook.getSheet("Sayfa1").getRow(i).getCell(1).toString();
+            //baskent ingilizce stununu yazdiracagim, i satiri, 1 de sutunu ifade eder.
             System.out.println("ingilizceBaskentSatiri = " + ingilizceBaskentSatiri);
 
         }
